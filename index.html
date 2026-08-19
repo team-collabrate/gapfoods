@@ -678,6 +678,7 @@
   .subbrand-card{
     display:flex;
     align-items:center;
+    justify-content:center;
     gap:36px;
     background:linear-gradient(120deg,#fff8ea,#fdf0cf);
     border:1px solid var(--line);
@@ -690,7 +691,8 @@
     flex:0 0 auto;
     width:220px;
   }
-  .subbrand-body{flex:1;}
+  /* Size to content, not the full card, so the logo + copy centre as one group */
+  .subbrand-body{flex:0 1 auto;}
   .subbrand-body .eyebrow{background:rgba(169,122,16,0.14);color:var(--gold-700);}
   .subbrand-body h3{font-size:clamp(20px,2.6vw,26px);margin:12px 0 10px;color:var(--green-900);}
   .subbrand-body p{color:var(--ink-soft);font-size:15.5px;margin:0 0 20px;max-width:560px;}
