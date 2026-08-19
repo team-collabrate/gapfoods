@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────────────────────
+# Internal commercial document — DO NOT COMMIT
+# "GAP FOODS.pdf" is the internal wholesale product list. It contains
+# wholesale prices, MRP and per-product profit margins for every item.
+# It is the source used to write the site copy, not publishable content.
+# ─────────────────────────────────────────────────────────────
+GAP FOODS.pdf
+*.pdf
+
+# Scratch / working files from asset preparation
+scratch_hero/
+scratch_images/
+extracted.txt
+
+# Local editor + tooling state
+.claude/settings.local.json
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
