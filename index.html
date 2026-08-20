@@ -819,24 +819,26 @@
   /* Sub-brand / Nutrilae card */
   .subbrand-card{
     display:flex;
+    flex-direction:column;
     align-items:center;
     justify-content:center;
-    gap:36px;
+    text-align:center;
+    gap:26px;
     background:linear-gradient(120deg,#fff8ea,#fdf0cf);
     border:1px solid var(--line);
     border-radius:28px;
     padding:40px 44px;
     box-shadow:var(--shadow);
   }
-  @media (max-width:820px){.subbrand-card{flex-direction:column;gap:22px;padding:32px 26px;}}
+  @media (max-width:820px){.subbrand-card{gap:22px;padding:32px 26px;}}
   .subbrand-logo{
     flex:0 0 auto;
-    width:220px;
+    width:240px;
   }
   /* Size to content, not the full card, so the logo + copy centre as one group.
      Text is centred too: the heading is the widest element, so left-aligning the
      shorter paragraph and button left the lower-right of the card looking empty. */
-  .subbrand-body{flex:0 1 auto;text-align:center;}
+  .subbrand-body{flex:0 1 auto;max-width:620px;}
   .subbrand-body .eyebrow{background:rgba(169,122,16,0.14);color:var(--gold-700);}
   .subbrand-body h3{font-size:clamp(20px,2.6vw,26px);margin:12px 0 10px;color:var(--green-900);}
   .subbrand-body p{color:var(--ink-soft);font-size:15.5px;margin:0 auto 20px;max-width:560px;}
